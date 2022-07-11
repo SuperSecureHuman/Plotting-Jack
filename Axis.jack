@@ -1,0 +1,8 @@
+// Draws the Axis for all types of plots
+class Axis {
+        function void axis() {
+            do Screen.drawLine(20,20,20,240);
+            do Screen.drawLine(10,230,470,230);
+        return;
+        }
+}

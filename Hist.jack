@@ -1,0 +1,17 @@
+class Hist{
+
+    function void draw(Array inputX, int ArrayLen){
+
+        var int loopVar, width;
+        
+        let loopVar = ArrayLen - 1;
+        let width = 20;
+
+        while (loopVar > -1){
+            do Screen.drawRectangle(width + 20, 230 - inputX[loopVar], width + 40, 230);
+            let width = width + 40;
+            let loopVar = loopVar - 1;
+        }
+        return;
+    }
+}

@@ -1,0 +1,33 @@
+class Main {
+        function void main() {
+            var Array inputX;
+            var Array inputY;
+            var int ArrayLen;
+
+            let ArrayLen = 5;
+
+            let inputX = Array.new(5);
+            let inputY = Array.new(5);
+
+            let inputX[0] = 20;
+            let inputY[0] = 35;
+
+            let inputX[1] = 20;
+            let inputY[1] = 50;
+
+            let inputX[2] = 40;
+            let inputY[2] = 13;
+
+            let inputX[3] = 60;
+            let inputY[3] = 90;
+
+            let inputX[4] = 100;
+            let inputY[4] = 110;
+
+            do Axis.axis();
+            do Hist.draw(inputX, ArrayLen);
+            do Output.moveCursor(0,25);
+            do Output.printString("Sample Random Generated Data");
+        return;
+        }
+}

@@ -1,0 +1,18 @@
+// Class for scatter plot
+
+// Origin O(20,230)
+
+class Scatter {
+    function void draw(Array inputX, Array inputY, int ArrayLen){
+        var int loopVar;
+
+        let loopVar = ArrayLen - 1;
+
+        while(loopVar > -1){
+            do Screen.drawCircle(20 + inputX[loopVar] , 230 - inputY[loopVar],3);
+            let loopVar = loopVar - 1;
+        }
+
+        return;
+    }
+}
