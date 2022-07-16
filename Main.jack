@@ -5,51 +5,30 @@ class Main {
             var int ArrayLen;
             var Random random;
             var int intRange;
+            var int loop;
         
             //set seed for random number generator
-            let random = Random.new(420);
+            let random = Random.new(100);
 
             let ArrayLen = 10;
+            let loop = ArrayLen;
 
             let inputX = Array.new(ArrayLen);
             let inputY = Array.new(ArrayLen);
 
             let intRange = 200;
 
-            let inputX[0] = random.randRange(intRange);
-            let inputY[0] = random.randRange(intRange);
+            while (loop > -1){
+                let inputX[loop] = random.randRange(intRange);
+                let inputY[loop] = random.randRange(intRange);
+                let loop = loop - 1;
+            }
 
-            let inputX[1] = random.randRange(intRange);
-            let inputY[1] = random.randRange(intRange);
-
-            let inputX[2] = random.randRange(intRange);
-            let inputY[2] = random.randRange(intRange);
-
-            let inputX[3] = random.randRange(intRange);
-            let inputY[3] = random.randRange(intRange);
-
-            let inputX[4] = random.randRange(intRange);
-            let inputY[4] = random.randRange(intRange);
-
-            let inputX[5] = random.randRange(intRange);
-            let inputY[5] = random.randRange(intRange);
-
-            let inputX[6] = random.randRange(intRange);
-            let inputY[6] = random.randRange(intRange);
-        
-            let inputX[7] = random.randRange(intRange);
-            let inputY[7] = random.randRange(intRange);
-
-            let inputX[8] = random.randRange(intRange);
-            let inputY[8] = random.randRange(intRange);
-
-            let inputX[9] = random.randRange(intRange);
-            let inputY[9] = random.randRange(intRange);
 
             do Axis.axis();
             do Hist.draw(inputX ,ArrayLen);
             do Output.moveCursor(0,25);
-            do Output.printString("Sample Line Graph");
+            do Output.printString("Sample Histogram");
             return;
 
         }
